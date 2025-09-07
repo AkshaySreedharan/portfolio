@@ -7,29 +7,32 @@
   <link rel="stylesheet" href="style-achievements.css">
 </head>
 <body>
-
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="index.html" class="logo">Akshay Sreedharan</a>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
+  <div class="page-wrapper">
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <a href="index.html" class="logo">Akshay Sreedharan</a>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="skills.html">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="achievements.html" class="active">Achievements</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
-      <ul class="nav-links" id="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="skills.html">Skills</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="achievements.html" class="active">Achievements</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <h1>My Achievements</h1>
-    <p>Highlights and recognitions I’ve earned in my career and studies.</p>
-  </section>
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section class="hero">
+        <div class="hero-content">
+          <h1>My Achievements</h1>
+          <p>Highlights and recognitions I've earned in my career and studies.</p>
+        </div>
+      </section>
 
   <!-- Achievements Section -->
   <section class="achievements-section">
@@ -54,20 +57,20 @@
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer>
-    © 2025 Akshay Sreedharan – All rights reserved.
-  </footer>
+    </main>
 
-  <!-- JavaScript for Hamburger -->
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
+    <footer>
+      <div class="container">
+        <p>© 2025 Akshay Sreedharan – All rights reserved.</p>
+        <div class="social-links">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="GitHub">GitHub</a>
+          <a href="#" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </footer>
+  </div>
 
-    hamburger.addEventListener('click', () => {
-      navLinks.classList.toggle('open');
-    });
-  </script>
-
+  <script src="script.js"></script>
 </body>
 </html>

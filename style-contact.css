@@ -1,13 +1,35 @@
 /* ================================
    GENERAL RESET
 ================================ */
+* { 
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box; 
+}
+
+html { 
+  scroll-behavior: smooth; 
+  height: 100%;
+}
+
 body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Inter", "Poppins", sans-serif;
   overflow-x: hidden;
   background: #f5f7fa;
   color: #333;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
 }
 
 /* ================================
